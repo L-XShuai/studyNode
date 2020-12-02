@@ -1,6 +1,4 @@
-const { rejects } = require('assert')
 const fs = require('fs')
-const { resolve } = require('path')
 
 // fs.writeFile('test.txt', '写入的内容', {flag: 'w', encoding: 'utf-8'}, (err) => {
 //   if (err) throw err
