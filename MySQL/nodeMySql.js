@@ -97,3 +97,25 @@ const isNall = 'select * from test where name is null'
 const isNall = 'select * from test where name is not null'
 
 // where 条件
+
+
+// 修改  test 表里的 id 为 1 的 name 内容
+const update1 = 'update test set name = “XXX” where id = 1'
+// 设置多个值
+const update1 = 'update test set name = “XXX”, XXX = XXX where id = 1'
+
+
+// 删除 test 表 里的 id 为 1 的数据
+
+const delete1 = 'delete from test where id = 1'
+
+
+// 事务 
+// 多条 sql 语句执行插入 一条失败 就报错 全部都不插入
+// 开始关键字  begin
+    // 执行的语句 ......
+// 结束关键字  commit
+
+// 回滚
+// 使得之前的操作无效
+// rollback
